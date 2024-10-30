@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso HTML5-CSS3</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/formularios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,11 +14,11 @@
         <!-- Barra de navegación -->
         <header id="header">
             <div class="logo">
-                <img src="img/logoiesfseif.png" alt="Logo" />
+                <img src="img/logoiesfseif.png" alt="Logotipo" />
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">Inicio</a></li>
                     <li><a href="#parrafos">Párrafos</a></li>
                     <li><a href="#enlaces">Enlaces</a></li>
                     <li><a href="#listas">Listas</a></li>
@@ -36,24 +37,103 @@
         <!-- Contenido principal -->
         <main class="main-content">
             <section class="hero fade-in" id="home">
-                <h1>HTML5 & CSS3</h1>
+                <h1>HTML5 y CSS3</h1>
                 <p>Un curso increíble para dominar el desarrollo web moderno</p>
             </section>
 
             <section class="home-content fade-in">
-                
+                <h1 class="text-center bg-azul-o text-white py-3">FORMULARIOS</h1>
+                <div class="px-3">
+                    <hr>
+                </div>
+                <div class="contenedor-formularios">
+                    <form action="#" method="get" class="formlogin">
+                        <fieldset>
+                            <legend>Iniciar sesión</legend>
+                            <label for="usuario">Usuario:</label>
+                            <input type="text" name="user" id="usuario" placeholder="Usuario" required>
+                            <label for="contrasena">Contraseña:</label>
+                            <input type="password" name="pass" id="contrasena" placeholder="Contraseña" required>
+                            <input type="submit" value="Enviar">
+                        </fieldset>
+                    </form>
+
+                    <form action="nombrecontraseña.txt" method="get" class="formregister">
+                        <fieldset>
+                            <legend>Registro</legend>
+                            <label for="usuarioRegistro">Usuario:</label>
+                            <input type="text" name="user" id="usuarioRegistro" required>
+                            <label for="contrasenaRegistro">Contraseña:</label>
+                            <input type="password" name="pass" id="contrasenaRegistro" required>
+                            <label for="provincia">Provincia:</label>
+                            <select name="provincia" id="provincia" required>
+                                <option value="">Selecciona una provincia</option>
+                                <option value="1">Toledo</option>
+                                <option value="2">Cuenca</option>
+                                <option value="3">Guadalajara</option>
+                                <option value="4">Ciudad Real</option>
+                                <option value="5">Albacete</option>
+                            </select>
+                            <label>Aficiones:</label><br />
+                            <div class="checkbox-group">
+                                <input type="checkbox" name="aficiones" value="Cine"> Cine
+                                <input type="checkbox" name="aficiones" value="Tenis"> Tenis
+                                <input type="checkbox" name="aficiones" value="Musica"> Música
+                                <input type="checkbox" name="aficiones" value="Fiesta"> Fiesta
+                                <input type="checkbox" name="aficiones" value="Videojuegos"> Videojuegos
+                                <input type="checkbox" name="aficiones" value="Dormir"> Dormir
+                            </div>
+                            <label>Sexo:</label><br />
+                            <div class="radio-group">
+                                <input type="radio" name="Sexo" value="Hombre" required> Hombre
+                                <input type="radio" name="Sexo" value="Mujer"> Mujer
+                                <input type="radio" name="Sexo" value="NoEspecificado"> No especificado
+                            </div>
+                            <label for="comentarios">Comentarios:</label>
+                            <textarea name="comment" id="comentarios" cols="55" rows="7"></textarea>
+                            <input type="submit" value="Enviar">
+                        </fieldset>
+                    </form>
+
+                    <form action="#" method="get" class="formhtml5">
+                        <fieldset>
+                            <legend>Formularios nuevos de HTML5</legend>
+                            <label for="color">Color:</label>
+                            <input type="color" name="color" id="color">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" name="fecha" id="fecha">
+                            <label for="fechaHora">Fecha y hora:</label>
+                            <input type="datetime-local" name="fechaHora" id="fechaHora">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" name="email" id="correo" required>
+                            <label for="documento">Documentos:</label>
+                            <input type="file" name="documento" id="documento">
+                            <label for="imagen">Imagen:</label>
+                            <input type="image" src="img/White_Cow.png" alt="Imagen">
+                            <label for="numero">Número:</label>
+                            <input type="number" name="numero" id="numero">
+                            <label for="telefono">Número de teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono">
+                            <label for="hora">Hora:</label>
+                            <input type="time" name="hora" id="hora">
+                            <label for="paginaWeb">Página web:</label>
+                            <input type="url" name="paginaWeb" id="paginaWeb">
+                            <label for="semana">Semana:</label>
+                            <input type="week" name="semana" id="semana">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
         </main>
 
-        <!-- Footer -->
+        <!-- Pie de página -->
         <footer>
-            <p>&copy; 2024 Pedro Campos</p>
+            <p>© 2024 Pedro Campos</p>
         </footer>
     </div>
 
     <!-- Script para la funcionalidad y efectos de menú -->
-    <script src="js/index.js"></script>
+    <script src="js/formularios.js"></script>
 </body>
 
 </html>
-
