@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegación -->
+        <header id="header">
+            <div class="logo">
+                <img src="img/logoiesfseif.png" alt="Logo" />
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#parrafos">Párrafos</a></li>
+                    <li><a href="#enlaces">Enlaces</a></li>
+                    <li><a href="#listas">Listas</a></li>
+                    <li><a href="#tablas">Tablas</a></li>
+                    <li><a href="#formularios">Formularios</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                </ul>
+                <div class="burger" id="btnmenu" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <section class="hero fade-in" id="home">
+                <h1>HTML5 & CSS3</h1>
+                <p>Un curso increíble para dominar el desarrollo web moderno</p>
+            </section>
+
+            <section class="home-content fade-in">
+                <img src="img/logohtmlcss.jpg" alt="HTML & CSS">
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Pedro Campos</p>
+        </footer>
+    </div>
+
+    <!-- Script para la funcionalidad y efectos de menú -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+
+

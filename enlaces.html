@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/enlaces.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegación -->
+        <header id="header">
+            <div class="logo">
+                <img src="img/logoiesfseif.png" alt="Logo" />
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#parrafos">Párrafos</a></li>
+                    <li><a href="#enlaces">Enlaces</a></li>
+                    <li><a href="#listas">Listas</a></li>
+                    <li><a href="#tablas">Tablas</a></li>
+                    <li><a href="#formularios">Formularios</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                </ul>
+                <div class="burger" id="btnmenu" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <section class="hero fade-in" id="enlaces">
+                <p>Los enlaces se realizan con la etiqueta <span class="etiqueta">a</span>, e indicamos el destino en el atributo <span class="atributo">href</span>.</p>
+
+                <!-- Caja de enlaces -->
+                <div class="enlace-section">
+                    <!-- Cada bloque de enlace está en una caja individual -->
+                    <div class="enlace-box">
+                        <h3>Enlace a una página nuestra</h3>
+                        <p><a href="index.html">Ir a Home</a></p>
+                    </div>
+
+                    <div class="enlace-box">
+                        <h3>Enlace a una página de internet</h3>
+                        <p><a href="http://www.google.es">Ir a internet</a></p>
+                    </div>
+
+                    <div class="enlace-box">
+                        <h3>Enlace a una página de internet desde una imagen</h3>
+                        <p><a href="http://www.google.es"><img src="img/logoiesfseif.png" alt="logo" class="responsive-image"></a></p>
+                    </div>
+
+                    <div class="enlace-box">
+                        <h3>Enlace a una página en una nueva pestaña</h3>
+                        <p><a href="http://www.toledo.es" target="_blank">Ir a Toledo</a></p>
+                    </div>
+
+                    <div class="enlace-box">
+                        <h3>Enlace a una dirección de correo</h3>
+                        <p><a href="mailto:pedromiguelcamposanchez@gmail.com">Sugerencia al web master</a></p>
+                    </div>
+
+                    <div class="enlace-box">
+                        <h3>Enlace a un programa</h3>
+                        <p><a href="javascript:alert('Hola Pedro!')">Abrir alerta</a></p>
+                    </div>
+
+                    <div class="enlace-box">
+                        <h3>Descargar plano de Toledo</h3>
+                        <p><a href="pdf/mapatoledo.pdf">Descargar plano de Toledo</a></p>
+                    </div>
+
+                    <div class="enlace-box">
+                        <h3>Hipervínculo</h3>
+                        <p><a href="#top"><img src="img/logoiesfseif.png" alt="logo" class="responsive-image"></a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Pedro Campos</p>
+        </footer>
+    </div>
+
+    <!-- Script para la funcionalidad y efectos de menú -->
+    <script src="js/enlaces.js"></script>
+</body>
+
+</html>

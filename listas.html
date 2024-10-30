@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/listas.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegación -->
+        <header id="header">
+            <div class="logo">
+                <img src="img/logoiesfseif.png" alt="Logo" />
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#parrafos">Párrafos</a></li>
+                    <li><a href="#enlaces">Enlaces</a></li>
+                    <li><a href="#listas">Listas</a></li>
+                    <li><a href="#tablas">Tablas</a></li>
+                    <li><a href="#formularios">Formularios</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                </ul>
+                <div class="burger" id="btnmenu" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <section class="hero fade-in" id="home">
+                <div id="listas" class="content">
+                    <h2>LISTAS</h2>
+
+                    <h3>Listas Desordenadas</h3>
+                    <ul class="custom-ul">
+                        <li><a href="https://www.google.com" target="_blank">Elemento 1</a></li>
+                        <li><a href="#seccion-destino">Elemento 2</a></li>
+                        <li><a href="https://www.wikipedia.org" target="_blank">Elemento 3</a></li>
+                        <li><a href="#footer">Elemento 4</a></li>
+                    </ul>
+
+                    <section class="listas">
+                        <h3>Listas Ordenadas</h3>
+                        <ol class="custom-ol">
+                            <li><a href="#">Elemento I</a></li>
+                            <li><a href="#">Elemento II</a></li>
+                            <li><a href="#">Elemento III</a></li>
+                            <li><a href="#">Elemento IV</a></li>
+                        </ol>
+                    </section>
+
+                    <h3>Listas Anidadas</h3>
+                    <ol class="custom-nested-ul">
+                        <li><a href="#">File</a>
+                            <ul>
+                                <li><a href="#">Preferencias</a>
+                                    <ul>
+                                        <li><a href="#">Perfil</a></li>
+                                        <li><a href="#">Ajustes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Open Recent</a>
+                                    <ul>
+                                        <li><a href="#">More</a></li>
+                                        <li><a href="#">Clean</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Pedro Campos</p>
+        </footer>
+    </div>
+
+    <!-- Script para la funcionalidad y efectos de menú -->
+    <script src="js/listas.js"></script>
+</body>
+
+</html>

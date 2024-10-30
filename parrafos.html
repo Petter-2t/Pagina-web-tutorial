@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/parrafos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegación -->
+        <header id="header">
+            <div class="logo">
+                <img src="img/logoiesfseif.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#parrafos">Párrafos</a></li>
+                    <li><a href="#enlaces">Enlaces</a></li>
+                    <li><a href="#listas">Listas</a></li>
+                    <li><a href="#tablas">Tablas</a></li>
+                    <li><a href="#formularios">Formularios</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                </ul>
+                <div class="burger" id="btnmenu" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <section id="parrafos">
+                <h2>Párrafos</h2>
+                <p>En esta sección aprenderemos etiquetas relacionadas con encabezados, formato de texto y párrafos.</p>
+                <p>Para la creación de párrafos, utilizamos la etiqueta <span class="etiqueta">p</span>, que automáticamente añade un espacio entre párrafos.</p>
+                <p>Si deseas omitir este espacio, puedes usar la etiqueta <span class="etiqueta">br</span> para saltos de línea sin espacios adicionales.</p>
+                <p>El espaciado entre párrafos se puede ajustar utilizando el CSS. Veamos algunos ejemplos:</p>
+                <div class="images">
+                    <img src="img/Margen de parrafos 1.png" alt="Margen de párrafos 1">
+                    <img src="img/Margen de parrafos 2.png" alt="Margen de párrafos 2">
+                    <img src="img/Margen de parrafos 3.png" alt="Margen de párrafos 3">
+                </div>
+                <p>Para rellenar con texto automático y sin significado, utilizamos la etiqueta <span class="etiqueta">lorem</span>. El texto generado se basa en un pasaje truncado de la obra <em>De finibus bonorum et malorum</em> de Cicerón, escrito en el año 45 a.C.</p>
+                <p>Aquí un ejemplo de uso de <strong>negrita</strong>, <em>cursiva</em>, y otras etiquetas como <span class="etiqueta">sup</span> para superíndices o <span class="etiqueta">sub</span> para subíndices.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Pedro Campos</p>
+        </footer>
+    </div>
+
+    <!-- Script para el menú -->
+    <script src="js/parrafos.js"></script>
+</body>
+
+</html>
